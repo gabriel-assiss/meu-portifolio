@@ -1,91 +1,125 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/estilos.css">
-    <title>Portifólio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
-<body id="body">
-    <nav>
-        <div class="nome">
-            <h1>Gabriel Assis</h1>
-        </div>
 
-        <div class="botoes">
-            <a href="#projetos" class="bt">Projetos</a>
-            <a href="#header" class="bt">Sobre Mim</a>
-            <a href="#contatos" class="bt">Contato</a>
-            <a href="#header2"" class="bt">Stacks</a>
-        </div>
-    </nav>
+<body>
 
-    <header class="header" id="header" >
-        <div class="texto">
-            <h2 style="font-size: 55px;">FullStack <br> Developer <br>    &nbsp;&nbsp;&nbsp;&nbsp;Web</h2>
+  <!-- NAVBAR -->
+  <nav>
+    <div class="nome">
+      <h1>Gabriel Assis</h1>
+    </div>
 
-            
+    <div class="botoes">
+      <a href="#projetos" class="bt">Projetos</a>
+      <a href="#header" class="bt">Sobre Mim</a>
+      <a href="#header2" class="bt">Stacks</a>
+      <a href="#contatos" class="bt">Contato</a>
+    </div>
+  </nav>
 
-            <h3 style="  text-align: center;">Olá! Meu nome é Gabriel Assis, sou estudante do curso técnico em Desenvolvimento de Sistemas e também curso Ciência da Computação.</h3>
-        </div>
+  <!-- HEADER -->
+  <header id="header">
+    <div class="texto">
+      <h2>FullStack <br> Developer <br> Web</h2>
+      <h3>
+        Olá! Meu nome é Gabriel Assis, sou estudante do curso técnico em
+        Desenvolvimento de Sistemas e curso Ciência da Computação.
+      </h3>
+    </div>
 
-        <div class="img">
-            <img id="fotoeu" src="fotos/foto_portifolio.jpg" alt="">
-        </div>
-    </header>
- <div class="header2" id="header2" >
-    <h2 style="text-align: center;">Habilidades</h2>
+    <div class="img">
+      <img id="fotoeu" src="fotos/foto_portifolio.jpg" alt="Foto Gabriel">
+    </div>
+  </header>
+
+  <!-- HABILIDADES -->
+  <section class="header2" id="header2">
+    <h2>Habilidades</h2>
+
     <div class="stacks">
+      <div class="stack-item">
+        <img src="fotos/HTML--Logo-removebg-preview.png" alt="HTML">
+        <span>HTML</span>
+      </div>
 
-        <div class="stk1">
-            <h3 class="stack">Html <img class="stack-img" src="fotos/HTML--Logo-removebg-preview.png" alt=""></h3>
-            <h3 class="stack">Css <img class="stack-img" src="fotos/css-logo.webp" alt=""></h3>
-            <h3 class="stack">JavaScript <img style="width: 70px;" class="stack-img" src="fotos/javascript-logo.webp" alt=""></h3>
-        </div>
+      <div class="stack-item">
+        <img src="fotos/css-logo.webp" alt="CSS">
+        <span>CSS</span>
+      </div>
 
-        <div class="stk2">
-            <h3 class="stack">TypeScript<img style="width: 50px;" class="stack-img" src="fotos/typescript_.png" alt=""></h3>
-            <h3 class="stack">React<img style="width: 50px;" class="stack-img" src="fotos/React-icon.svg.png" alt=""></h3>
-            <h3 class="stack">Sql<img style="width: 70px;" class="stack-img" src="fotos/Sql-foto-removebg-preview.png" alt=""></h3>
-        </div>
+      <div class="stack-item">
+        <img src="fotos/javascript-logo.webp" alt="JavaScript">
+        <span>JavaScript</span>
+      </div>
+
+      <div class="stack-item">
+        <img src="fotos/typescript_.png" alt="TypeScript">
+        <span>TypeScript</span>
+      </div>
+
+      <div class="stack-item">
+        <img src="fotos/React-icon.svg.png" alt="React">
+        <span>React</span>
+      </div>
+
+      <div class="stack-item">
+        <img src="fotos/Sql-foto-removebg-preview.png" alt="SQL">
+        <span>SQL</span>
+      </div>
     </div>
-    </div>
-    <br>
-    <h2 style="text-align: center;" id="projetos" >Projetos</h2>
-    <div class="projetos" >
+  </section>
 
-        <div class="pjt">
-            <img class="img-projeto" src="fotos/Captura de tela 2025-11-07 211420.png" alt="">
-            <br>
-            <h2>Portifólio</h2>
+  <!-- PROJETOS -->
+  <h2 id="projetos" class="titulo">Projetos</h2>
 
-            <h5 style="text-align: center; width: 80%;">Meu primeiro projeto real com deploy e hospedado , fonte de informação sobre minhas habilidades,evolução e contatos.</h5>
-        </div>
-        <div class="pjt">
-            <img class="img-projeto" src="fotos/Captura de tela 2025-11-07 211420.png" alt="">
-            <br>
-            <h2>Portifólio</h2>
-
-            <h5 style="text-align: center; width: 80%;">Meu primeiro projeto real com deploy e hospedado , fonte de informação sobre minhas habilidades,evolução e contatos.</h5>
-        </div>
-        <div class="pjt">
-            <img class="img-projeto" src="fotos/Captura de tela 2025-11-07 211420.png" alt="">
-            <br>
-            <h2>Portifólio</h2>
-
-            <h5 style="text-align: center; width: 80%;">Meu primeiro projeto real com deploy e hospedado , fonte de informação sobre minhas habilidades,evolução e contatos.</h5>
-        </div>
-       
+  <section class="projetos">
+    <div class="pjt">
+      <img class="img-projeto" src="fotos/Captura de tela 2026-01-30 222412.png">
+      <h2>🎬 CineStream</h2>
+      <p>
+        Projeto em React com consumo de API de filmes e séries,
+        permitindo pesquisar títulos e visualizar detalhes.
+      </p>
     </div>
 
-    
-    <footer id="contatos">
-        <h3>Contatos</h3>
-        <a href="www.linkedin.com/in/gabrielassis0001" style="display: flex; justify-content: center;align-items: center;">GitHub<img style="width: 40px; height: 40px;" src="fotos/GitHub-removebg-preview.png" alt=""></a>
-        <a href="#" style="display: flex; justify-content: center;align-items: center;">Linkedin<img style="width: 40px; height: 40px;" src="fotos/image-linedin-removebg-preview.png" alt="""></a>
-    </footer>
-       
+    <div class="pjt">
+      <img class="img-projeto" src="fotos/climatech.jpeg">
+      <h2>🌤️ Climatch</h2>
+      <p>
+        Aplicação React que consome API de clima para exibir
+        informações meteorológicas em tempo real.
+      </p>
+    </div>
 
-<script src="js/scripts.js"></script>
+    <div class="pjt">
+      <img class="img-projeto" src="fotos/Captura de tela 2026-01-31 182831.png">
+      <h2>💰 FinanUp</h2>
+      <p>
+        Projeto front-end focado exclusivamente na interface visual
+        de uma aplicação financeira.
+      </p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="contatos">
+    <h3>Contatos</h3>
+
+    <a href="https://github.com/gabriel-assiss" target="_blank">
+      GitHub
+    </a>
+
+    <a href="https://www.linkedin.com/in/gabrielassis0001" target="_blank">
+      LinkedIn
+    </a>
+  </footer>
+
 </body>
 </html>

@@ -1,211 +1,243 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
+
 html {
   scroll-behavior: smooth;
 }
-body{
-    margin: 0;
-    font-family: 'Lato', sans-serif;
-    background: black;
-    color: white ;
 
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  background: black;
+  color: white;
 }
 
-/*menu de seleção*/
-
-nav{
-    display: flex;
-    position: fixed;
-    width: 100%;
-    z-index: 1;
-    background: black;
+/* ================= NAV ================= */
+nav {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  background: black;
+  z-index: 10;
+  flex-wrap: wrap;
 }
 
-.nome{
-    
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.nome, .botoes {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-
-.botoes{
-
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-.bt{
-    text-decoration: none;
-    color: white;
-    margin-left: 20px;
-    padding: 16px 14px;
-    transition: 0.2s;
-    font-weight: 200;
-}
-.bt:hover{
-    border-top: solid rgb(255, 255, 255) 3px;
-    transition: 0.2s;
-    transform:scale(1.05);
-    
+.botoes {
+  flex-wrap: wrap;
 }
 
-/*Heaeder*/
-
-header{
-height: 100vh;
-display: flex;
+.bt {
+  text-decoration: none;
+  color: white;
+  margin: 10px;
+  padding: 10px;
+  font-size: 14px;
 }
 
-
-
-.texto{
-width: 48%;
-display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
-margin-left: 60px;
-
+.bt:hover {
+  border-top: 3px solid white;
 }
 
-.img{
-width: 52%;
-display: flex;
-justify-content: center;
-align-items: center;
-margin-right:90px ;
+/* ================= HEADER ================= */
+header {
+  min-height: 100vh;
+  display: flex;
+  padding-top: 100px;
 }
-#fotoeu{
-    width: 50%;
-    height: 50%;
-    border-radius: 100%;
+
+.texto {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 60px;
+}
+
+.texto h2 {
+  font-size: 50px;
+}
+
+.texto h3 {
+  font-weight: 300;
+}
+
+.img {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#fotoeu {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(10px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(10px); }
+}
+
+/* ================= HABILIDADES ================= */
+.header2 {
+  padding: 80px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stacks {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  background: rgba(62, 62, 62, 0.6);
+  padding: 40px;
+  border-radius: 8px;
+}
+
+.stack-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.stack-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.stack-item span {
+  margin-top: 10px;
+}
+
+.stack-item:hover {
+  transform: scale(1.1);
+}
+
+/* ================= PROJETOS ================= */
+.titulo {
+  text-align: center;
+}
+
+.projetos {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px;
+  flex-wrap: wrap;
+}
+
+.pjt {
+  width: 300px;
+  background: rgba(62, 62, 62, 0.6);
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.pjt:hover {
+  transform: scale(1.05);
+}
+
+.img-projeto {
+  width: 100%;
+  border-radius: 5px;
+}
+
+/* ================= FOOTER ================= */
+footer {
+  background: rgba(62, 62, 62, 0.6);
+  padding: 20px;
+  text-align: center;
+}
+
+footer a {
   display: block;
-  margin: 40px auto;
-  will-change: transform;
-  animation: floatUpDown 3s ease-in-out infinite;
-    
+  color: white;
+  text-decoration: none;
+  margin: 5px 0;
 }
 
-#fotoeu:hover{
-    animation-play-state: paused;
-    
-}
+/* ================================================= */
+/* ================= MOBILE ========================= */
+/* ================================================= */
 
-@keyframes floatUpDown {
-  0%   { transform: translateY(15); }
-  50%  { transform: translateY(-15px); }
-  100% { transform: translateY(15); }
-}
+@media (max-width: 768px) {
 
-/*stacks*/
-.header2{
-    display: flex;
+  /* NAV */
+  nav {
     flex-direction: column;
-    align-items: center;
-    height: 70vh;
-    
-    
-}
-.stacks{
-    width: 50%;
-    display: flex;
-    
-    text-align: center;
-    
-    background: rgba(62, 62, 62, 0.562);
-    border-radius: 5px;
-}
+  }
 
-.stack{
-    display: flex;
-    align-items: center;
-    margin: 30px;
-}
-
-.stack-img{
-    width: 100px;
-    height: 50px;
-    margin-left: 5px;
-}
-
-.stk1{
-    width: 50%;
-}
-.stk2{
-    width: 50%;
-}
-
-.stk1 .stack{
-    justify-content: end;
-}
-.stk2 .stack{
-    justify-content:baseline;
-}
-
-/*Projetos*/
-
-.projetos{
-    
+  .nome, .botoes {
     width: 100%;
-    height: 90vh;
-    display: flex;
-}
+  }
 
-.pjt{
-background: rgba(62, 62, 62, 0.562);
-height: 75%;
-width: 30%;
-margin: 3%;
-display: flex;
-flex-direction: column;
-align-items: center;
-transition: 0.3s;
-border-radius: 5px;
-}
-
-.pjt:hover{
-    transform: scale(1.05);
-    transition: 0.3s;
-}
-
-.img-projeto{
-height: 210px;
-width: 300px;
-margin-top: 40px;
-border-radius: 3px;
-}
-
-/*contatos*/
-
-
-
-
-
-
-
-/*Fotter*/
-footer{
-    width: 100%;
-    height: auto;
-    background: rgba(62, 62, 62, 0.562);
-    display: flex;
+  /* HEADER */
+  header {
     flex-direction: column;
     text-align: center;
-    
-    
+    padding-top: 120px;
+  }
+
+  .texto {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .texto h2 {
+    font-size: 36px;
+  }
+
+  .img {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  #fotoeu {
+    width: 180px;
+    height: 180px;
+  }
+
+  /* HABILIDADES */
+  .stacks {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 30px;
+  }
+
+  /* PROJETOS */
+  .projetos {
+    padding: 20px;
+  }
+
+  .pjt {
+    width: 100%;
+    max-width: 350px;
+  }
 }
-a{
-   
-    color: white;
-    text-decoration: none;
-    margin-right: 3px;
+
+@media (max-width: 480px) {
+
+  /* HABILIDADES */
+  .stacks {
+    grid-template-columns: 1fr;
+  }
+
+  .texto h2 {
+    font-size: 30px;
+  }
 }
-
-
-
-
