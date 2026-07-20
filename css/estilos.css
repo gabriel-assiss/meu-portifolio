@@ -77,8 +77,8 @@ header {
 }
 
 #fotoeu {
-  width: 250px;
-  height: 250px;
+  width: 350px;
+  height: 350px;
   border-radius: 50%;
   animation: float 3s ease-in-out infinite;
 }
@@ -161,7 +161,7 @@ header {
 /* ================= FOOTER ================= */
 footer {
   background: rgba(62, 62, 62, 0.6);
-  padding: 20px;
+  padding: 5px;
   text-align: center;
 }
 
